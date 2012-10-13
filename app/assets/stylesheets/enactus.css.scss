@@ -6,6 +6,7 @@
 
 .min-height {
 	min-height:400px;
+	background: #e6e6e6;
 }
 
 .low-contrast-linen {
@@ -23,8 +24,8 @@
 		padding-top:10px;
 		.logo {
 			background: url(image_path('logo.png')) no-repeat left top;
-			width:611px;
-			margin-right:39px;
+			width:615px;
+			margin-right:35px;
 			height:75px;
 			font-size:37px;
 			color:white;
@@ -115,12 +116,14 @@
 .main {
 	height:100%;
 	width:inherit;
+	padding:20px 0;
 	h1 {
 		weight:600;
-		padding:0 50px;
-		margin-bottom:10px;
+		padding:10px 30px;
+		margin:0;
 	}
 	p {
-		padding:0 50px;
+		font-weight:400;
+		padding:10px 30px;
 	}
 }
