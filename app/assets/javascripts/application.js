@@ -13,3 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function() {
+	$('.top-nav-container .top-nav .logo').click(function() {
+		window.location = "/"
+	});
+});

@@ -1,5 +1,11 @@
+
+
 .gray {
 	background: #e3f2f5;
+}
+
+.min-height {
+	min-height:400px;
 }
 
 .low-contrast-linen {
@@ -17,25 +23,37 @@
 		padding-top:10px;
 		.logo {
 			background: url(image_path('logo.png')) no-repeat left top;
-			width:650px;
+			width:611px;
+			margin-right:39px;
 			height:75px;
 			font-size:37px;
 			color:white;
 			text-indent:180px;
 			line-height:117px;
 			float:left;
+			&:hover {
+				cursor:pointer;
+			}
+			a, a:hover, a:visited {
+				color:white;
+				text-decoration:none;
+			}
 		}
 		ul {
 			list-style:none;
 			display:inline;
 			li {
+				float:left;
 				margin-left:32px;
-				line-height:130px;
-				color:white;
-				font-size:18px;
 				display:inline;
-				&:hover {
-					color:#ffc423;
+				padding-top:52px;				
+				a {
+					color:white;
+					font-size:18px;
+					text-decoration:none;
+					&:hover {
+						color:#ffc423;
+					}
 				}
 			}
 		}

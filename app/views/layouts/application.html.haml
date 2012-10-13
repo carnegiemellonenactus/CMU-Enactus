@@ -1,9 +1,50 @@
 !!!
 %html
-  %head
-    %title CMU Enactus
-    = stylesheet_link_tag    "application"
-    = javascript_include_tag "application"
-    = csrf_meta_tags
-  %body
-    = yield
+	%head
+		%title CMU Enactus
+		= stylesheet_link_tag    "application"
+		= javascript_include_tag "application"
+		= csrf_meta_tags
+	%body
+		.top-nav-container.low-contrast-linen
+			.top-nav
+				.logo
+					=link_to "carnegie mellon university", root_url
+				%ul
+					%li
+						=link_to "projects", projects_url
+					%li
+						=link_to "about", about_url
+					%li
+						=link_to "contact", contact_url
+		.container_12.gray.min-height
+			= yield
+		.bottom-nav-container.low-contrast-linen
+			.bottom-nav
+				.bottom-pane.about
+					.logo
+						=image_tag('logo.png')
+					%p
+						%span.semi-bold.yellow 
+							En
+						trepreneurial - having the perspective to see an opportunityand talent to create value from that opportunity;
+					%p
+						%span.semi-bold.yellow 
+							Ac
+						tion - the willingness to do something and the commitment to see it through even when the outcome is not guaranteed;  
+					%p
+						%span.semi-bold.yellow 
+							Us
+						= "-" 
+						a collection of people who see themselves connected in some important way; individuals that are part of a greater whole.
+				.bottom-pane
+					%h2
+						Sponsors
+					%p
+						We would like to thank the following sponsors, because without them we would be broke.
+				.bottom-pane
+					%h2
+						Contact
+					%p
+						cmuenactus[at]gmail[dot]com
+

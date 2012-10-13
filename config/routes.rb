@@ -1,6 +1,11 @@
 CMUEnactus::Application.routes.draw do
 
   root to: "static#home"
+
+  get "projects", to: "static#projects", as: "projects"
+  get "contact", to: "static#contact", as: "contact"
+  get "about", to: "static#about", as: "about"
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
