@@ -18,4 +18,6 @@ $(document).ready(function() {
 	$('.top-nav-container .top-nav .logo').click(function() {
 		window.location = "/"
 	});
+
+  $(".collapse").collapse();
 });
