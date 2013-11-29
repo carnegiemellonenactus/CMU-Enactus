@@ -1,12 +1,7 @@
 .main
 	%h1
 		Contact us! We'd love to hear from you! 
-    %p
-      For general information or questions, please email
-      %a{:href => "mailto:cmuenactus@gmail.com?Subject=General%20Information", :target => "_top"}
-        CMU Enactus.
-    %p
-      To be added to our mailing list, please email
-      %a{:href => "mailto:acye@andrew.cmu.edu?Subject=General%20Information", :target => "_top"}
-        Alice Ye.
-
+	%p
+		For general information or questions, please email #{mail_to "cmuenactus@gmail.com"}
+	%p
+		To be added to our mailing list, please email #{mail_to "acye@andrew.cmu.edu"}
