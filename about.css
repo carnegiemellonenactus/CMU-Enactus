@@ -1,0 +1,56 @@
+@font-face {
+	font-family: SourceSansProLight;
+	src: url(fonts/SourceSansPro-Light.otf);
+}
+@font-face {
+	font-family: SourceSansProRegular;
+	src: url(fonts/SourceSansPro-Regular.otf);
+}
+@font-face {
+	font-family: SourceSansProBold;
+	src: url(fonts/SourceSansPro-Bold.otf);
+}
+body {
+	margin: 0 0 0 0;
+	background-image: url("images/lightgreybackground.png");
+}
+#grayback {
+	height: 100%;
+	width: 74%;
+	background-color: rgba(221, 221, 221, 1);
+	background-position: center;
+	margin: 0 13% 0 13%;
+	padding: 0 0 0 0;
+}
+#grayback #body-container {
+	height: 100%;
+	width: 97%;
+	background-color: white;
+	background-position: center;
+	position: relative;
+	top: -20px;
+	margin: 0 auto;
+}
+.about-description {
+	padding: 30px 40px 10px 40px;
+}
+.about-description h1 {
+	font-family: SourceSansProRegular;
+	font-size: 30px;
+	color: #FFC222;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	text-align: center;
+}
+.about-description p {
+	font-family: SourceSansProLight;
+	font-size: 20px;
+}
+#white-slab {
+	background-color: white;
+	z-index: 1;
+	height: 20px;
+	width: 97%;
+	margin: 0 auto;
+	margin-top: -20px;
+}

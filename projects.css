@@ -1,0 +1,74 @@
+@font-face {
+	font-family: SourceSansProLight;
+	src: url(fonts/SourceSansPro-Light.otf);
+}
+@font-face {
+	font-family: SourceSansProRegular;
+	src: url(fonts/SourceSansPro-Regular.otf);
+}
+@font-face {
+	font-family: SourceSansProBold;
+	src: url(fonts/SourceSansPro-Bold.otf);
+}
+@font-face {
+	font-family: FiraSansLight;
+	src: url(fonts/FiraSans-Light.ttf);
+}
+.project-descriptions-container {
+	padding: 30px 40px 10px 40px;
+}
+.project-descriptions-container h1 {
+	font-family: SourceSansProRegular;
+	font-size: 30px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	text-align: center;
+}
+.project-descriptions {
+	border-bottom: 1px solid #515356;
+}
+.project-descriptions h3{
+	font-family: SourceSansProRegular;
+	font-size: 30px;
+	color: #FFC222;
+}
+.project-descriptions p{
+	font-family: SourceSansProLight;
+	font-size: 20px;
+}
+
+.project-descriptions h5 {
+	width: 100%;
+	height: auto;
+	font-family: SourceSansProLight;
+	font-size: 15px;
+}
+.project-leader-image {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #515356;
+	position: relative;
+	overflow: hidden;
+}
+.project-leaders {
+	display: inline-block;
+	width: 45%;
+	height: auto;
+	vertical-align: top;
+	padding-right: 20px;
+
+}
+.project-leader-image img{
+	width: 100%;
+	height: auto;
+}
+.vision-initiative-bold {
+	font-family: SourceSansProBold;
+	font-size: 20px;
+}
+.project-leaders {
+	display: inline-block;
+}
+#enactus-chile-description {
+	border-bottom: none;
+}

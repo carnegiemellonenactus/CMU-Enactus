@@ -1,0 +1,250 @@
+@font-face {
+	font-family: SourceSansProLight;
+	src: url(fonts/SourceSansPro-Light.otf);
+}
+@font-face {
+	font-family: SourceSansProRegular;
+	src: url(fonts/SourceSansPro-Regular.otf);
+}
+@font-face {
+	font-family: SourceSansProBold;
+	src: url(fonts/SourceSansPro-Bold.otf);
+}
+@font-face {
+	font-family: FiraSansHair;
+	src: url(fonts/FiraSans-Hair.ttf);
+}
+@font-face {
+	font-family: FiraSansLight;
+	src: url(fonts/FiraSans-Light.ttf);
+}
+body {
+	margin: 0 0 0 0;
+}
+.top-nav-container {
+	background-image: url("images/darkgrey_background.png");
+	width: 100%;
+	height: 100px;
+	margin: 0px 0px 0px 0px;
+	padding: 0 0 10px 0;
+	overflow: hidden;
+}
+nav ul {
+	list-style-type: none;
+}
+nav li{
+	display: inline-block;
+	font-size: 20px;
+}
+
+em {
+	font-style: normal;
+}
+
+#top-nav-logo {
+	float: left;
+	padding-left: 14%
+}
+
+#top-nav-logo img {
+	max-height: 70px;
+	width: auto;
+}
+#top-nav-links {
+	position: absolute;
+	right: 14.5%;
+	padding-top: 50px;
+}
+#top-nav-links a {
+	font-family: SourceSansProRegular;
+	font-size: 20px;
+	color: white;
+	padding-left: 5px;
+}
+#top-nav-links a:hover {
+	color: #FFC222;
+	cursor: pointer;
+}
+.main-projects-container {
+	width: 100%;
+	height: 750px;
+	margin: 0,0,0,0;
+}
+.home-container {
+	background-image: url("images/bethechange.png");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0,0,0,0;
+}
+.hsContainer {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#main-projects-header {
+	margin: 0,0,0,0;
+	position: relative;
+	overflow: hidden;
+	padding-top: 30px;
+}
+#main-projects-header h1 {
+	font-family: SourceSansProLight;
+	font-size: 60px;
+	color: #FFC222;
+	text-align: center;
+	margin: 0,0,0,0;
+}
+.project-row {
+	text-align: center;
+}
+
+.project-box {
+	height: 400px;
+	width: 380px;
+	display: inline-block;
+	border: 1px solid #515356;
+	vertical-align: top;	
+    position:relative;
+    overflow:hidden;
+    margin: 20px;
+    background-color: white;
+}
+.overlay {
+	height: 350px;
+	width: 380px;
+}
+.overlay h3 {
+	font-family: SourceSansProBold;
+	font-size: 30px;
+	color: white;
+	background-color: rgba(255,194,34,0.6);
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+	margin: auto;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	padding-top: 60%;
+}
+.overlay h3:hover {
+	opacity: 1;
+}
+.project-box img {
+	position: relative;
+	height: 350px;
+	width: auto;
+}
+.project-box p {
+	font-family: FiraSansLight;
+	font-size: 20px;
+	color: black;
+	position: absolute;
+	bottom: -10px;
+	right: 0;
+	left: 0;
+}
+.bottom-nav-container {
+	background-color: #515356;
+	clear: both;
+}
+.semi-bold-yellow {
+	font-family: SourceSansProBold;
+	font-size: 14px;
+	color: #FFC222;
+}
+.bottom-nav {
+	padding: 20px 0 20px 0;
+	clear: both;
+	display: inline-block;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	height: 100%;
+	width: 70%;
+	margin-left: 15%;
+}
+.bottom-nav p {
+	font-family: SourceSansProLight;
+	font-size: 14px;
+	color: white;
+}
+#en-act-us {
+	width: 49.5%;
+	border-right: 1px solid white;
+	float: left;
+}
+#en-act-us p {
+	padding-right: 10px;
+}
+#get-involved {
+	width: 49.5%;
+	float: right;
+	display: inline-block;
+	text-align: left;
+	margin-top: -10px;
+}
+
+#get-involved p {
+	padding-left: 10px;
+}
+#get-involved h3 {
+	font-family: SourceSansProRegular;
+	font-size: 18px;
+	color: white;
+	padding-left: 15px;
+	margin-bottom: -1px;
+}
+#blurb {
+	position: relative;
+	top: 0px;
+}
+#get-involved a {
+	color: white;
+}
+#get-involved img {
+	margin-bottom: -5px;
+}
+#social-icons {
+	float: left;
+	width: 10%;
+}
+#get-involved-text {
+	float: right;
+	text-align: left;
+	width: 90%;
+}
+#get-involved-text p{
+	padding-bottom: 8px;
+	margin-left: -10px;
+}
+#get-involved-text a {
+	text-decoration: none;
+}
+#twitter-icon {
+	max-height: 24px;
+	width: auto;
+	border-radius: 25px;
+}
+#facebook-icon {
+	max-height: 24px;
+	width: auto;
+}
+#email-icon {
+	max-height: 24px;
+	width: auto;
+}
+
+
