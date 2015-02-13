@@ -1,3 +1,4 @@
+/*
 @font-face {
 	font-family: SourceSansProLight;
 	src: url(fonts/SourceSansPro-Light.otf);
@@ -18,15 +19,24 @@
 	font-family: FiraSansLight;
 	src: url(fonts/FiraSans-Light.ttf);
 }
+*/
 body {
 	margin: 0 0 0 0;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 .top-nav-container {
-	background-image: url("images/darkgrey_background.png");
+/*	background-image: url("images/darkgrey_background.png");*/
+    background: #202020;
 	width: 100%;
-	height: 100px;
-	margin: 0px 0px 0px 0px;
-	padding: 0 0 10px 0;
+	height: 6.25em;
+	margin: 0;
+	padding-bottom: 0.625em;
 	overflow: hidden;
 }
 nav ul {
@@ -34,7 +44,7 @@ nav ul {
 }
 nav li{
 	display: inline-block;
-	font-size: 20px;
+	font-size: 1em;
 }
 
 em {
@@ -47,7 +57,7 @@ em {
 }
 
 #top-nav-logo img {
-	max-height: 70px;
+	max-height: 4.3em;
 	width: auto;
 }
 #top-nav-links {
@@ -56,18 +66,22 @@ em {
 	padding-top: 50px;
 }
 #top-nav-links a {
-	font-family: SourceSansProRegular;
-	font-size: 20px;
+	font-size: 1.25em;
+    font-weight: 300;
 	color: white;
-	padding-left: 5px;
+	padding-left: 3.125em;
 }
 #top-nav-links a:hover {
 	color: #FFC222;
 	cursor: pointer;
 }
+.body-container {
+    width: 100%;
+    text-align: center;
+}
 .main-projects-container {
 	width: 100%;
-	height: 750px;
+	height: 50em;
 	margin: 0,0,0,0;
 }
 .home-container {
@@ -83,7 +97,7 @@ em {
 .hsContainer {
     overflow: hidden;
     position: relative;
-    height: 100%;
+    height: 80%;
     width: 100%;
 }
 
@@ -91,79 +105,108 @@ em {
 	margin: 0,0,0,0;
 	position: relative;
 	overflow: hidden;
-	padding-top: 30px;
 }
 #main-projects-header h1 {
-	font-family: SourceSansProLight;
-	font-size: 60px;
+	font-size: 3.75em;
+    font-weight: 500;
 	color: #FFC222;
 	text-align: center;
 	margin: 0,0,0,0;
 }
-.project-row {
-	text-align: center;
+.project-box-container {
+    display: inline-block;
+    width: 90%;
+    padding-bottom: 6em;
+}
+.project-box {
+    width: 20em;
+    height: 20em;
+    z-index: 1;
+    perspective: 1000px;
+    display: inline-block;
+    margin: 0.5em;
+}
+.project-box .flipcard:hover {
+    transform: rotateY(180deg);
+    box-shadow: -5px 5px 5px #aaa;
+}
+.flipcard {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+}
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+.front.face {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.front.face img {
+    width: 20em;
+    height: 20em;
+}
+.front.face p {
+    margin-top: 70%;
+    background-color: rgba(0,0,0,0.8);
+    height: 10%;
+    padding: 10%;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+.face.back{
+    padding: 10px;
+    background: #FFC222;
+    color: #fff;
+    transform: rotateY(180deg);
+}
+.face.back p {
+    margin-top: 30%;
+    line-height: 1.5em;
+    font-weight:300;
+}
+.center {
+    text-align: center;
+}
+#eco-markets {
+    background-image: url("images/eco-market.png");
+}
+#project-pulse {
+    background-image: url("images/project-pulse.png");
+}
+#citizens-empowerment {
+    background-image: url("images/citizens-empowerment.png");
+}
+#enactus-mexico {
+    background-image: url("images/enactus-mexico.png");
+}
+#enactus-chile {
+    background-image: url("images/enactus-chile.png");
+}
+#enactus-global {
+    background-image: url("images/global-website.png");
 }
 
-.project-box {
-	height: 400px;
-	width: 380px;
-	display: inline-block;
-	border: 1px solid #515356;
-	vertical-align: top;	
-    position:relative;
-    overflow:hidden;
-    margin: 20px;
-    background-color: white;
-}
-.overlay {
-	height: 350px;
-	width: 380px;
-}
-.overlay h3 {
-	font-family: SourceSansProBold;
-	font-size: 30px;
-	color: white;
-	background-color: rgba(255,194,34,0.6);
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0px;
-	margin: auto;
-	height: 100%;
-	width: 100%;
-	text-align: center;
-	padding-top: 60%;
-}
-.overlay h3:hover {
-	opacity: 1;
-}
-.project-box img {
-	position: relative;
-	height: 350px;
-	width: auto;
-}
-.project-box p {
-	font-family: FiraSansLight;
-	font-size: 20px;
-	color: black;
-	position: absolute;
-	bottom: -10px;
-	right: 0;
-	left: 0;
-}
+
 .bottom-nav-container {
-	background-color: #515356;
+	background-color: #202020;
 	clear: both;
+    text-align: center;
 }
 .semi-bold-yellow {
-	font-family: SourceSansProBold;
-	font-size: 14px;
+	font-size: 1em;
+    font-weight: 600;
 	color: #FFC222;
 }
 .bottom-nav {
-	padding: 20px 0 20px 0;
+	padding: 1.25em 0 1.25em 0;
 	clear: both;
 	display: inline-block;
 	position: relative;
@@ -173,78 +216,41 @@ em {
 	left: 0;
 	margin: 0 auto;
 	height: 100%;
-	width: 70%;
-	margin-left: 15%;
+	width: 60%;
 }
 .bottom-nav p {
-	font-family: SourceSansProLight;
-	font-size: 14px;
+	font-size: 0.9em;
+    font-weight: 300;
 	color: white;
 }
 #en-act-us {
-	width: 49.5%;
-	border-right: 1px solid white;
-	float: left;
+	width: 100%;
+    text-align:left;
 }
 #en-act-us p {
-	padding-right: 10px;
+	padding-right: 0.625em;
 }
 #get-involved {
-	width: 49.5%;
-	float: right;
+	width: 45%;
 	display: inline-block;
 	text-align: left;
-	margin-top: -10px;
 }
-
-#get-involved p {
-	padding-left: 10px;
-}
-#get-involved h3 {
-	font-family: SourceSansProRegular;
-	font-size: 18px;
-	color: white;
-	padding-left: 15px;
-	margin-bottom: -1px;
-}
-#blurb {
-	position: relative;
-	top: 0px;
-}
-#get-involved a {
-	color: white;
-}
-#get-involved img {
-	margin-bottom: -5px;
-}
-#social-icons {
-	float: left;
-	width: 10%;
-}
-#get-involved-text {
-	float: right;
-	text-align: left;
-	width: 90%;
-}
-#get-involved-text p{
-	padding-bottom: 8px;
-	margin-left: -10px;
-}
-#get-involved-text a {
-	text-decoration: none;
-}
-#twitter-icon {
-	max-height: 24px;
+#social-icons img {
+    max-height: 3em;
 	width: auto;
-	border-radius: 25px;
+    display: inline-block;
+    padding-right: 2em;
 }
-#facebook-icon {
-	max-height: 24px;
-	width: auto;
+#social-icons ul {
+    list-style-type: none;
 }
-#email-icon {
-	max-height: 24px;
-	width: auto;
+#social-icons ul li {
+    display: inline;
+}
+#social-icons a{
+	padding-bottom: 1em;
+    font-weight: 300;
+    text-decoration: none;
 }
 
 
