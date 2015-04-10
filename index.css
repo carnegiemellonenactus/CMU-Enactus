@@ -26,7 +26,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 nav {
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 100;
 }
@@ -36,7 +36,7 @@ nav {
 	width: 100%;
 	height: 6.25em;
 	margin: 0;
-	padding-bottom: 0.625em;
+	padding-bottom: 1em;
 	overflow: hidden;
 }
 nav ul {
@@ -107,8 +107,8 @@ em {
 	overflow: hidden;
 }
 #main-projects-header h1 {
-	font-size: 3.75em;
-    font-weight: 500;
+	font-size: 3em;
+    font-weight: 400;
 	color: #FFC222;
 	text-align: center;
 	margin: 0,0,0,0;
@@ -251,6 +251,14 @@ em {
 	padding-bottom: 1em;
     font-weight: 300;
     text-decoration: none;
+}
+
+@media only screen 
+and (min-device-width : 700px) 
+and (max-device-width : 1300px) {
+    back.face {
+        display: none;
+    }
 }
 
 

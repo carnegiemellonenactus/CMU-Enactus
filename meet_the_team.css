@@ -1,3 +1,4 @@
+/*
 @font-face {
 	font-family: SourceSansProLight;
 	src: url(fonts/SourceSansPro-Light.otf);
@@ -15,14 +16,28 @@
 	font-family: DistrictThinPro;
 	src: url(fonts/DistrictThinPro.otf);
 }
-
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+#grayback #body-container {
+	height: 100%;
+	width: 97%;
+	background-color: white;
+	background-position: center;
+	position: relative;
+	top: -20px;
+	margin: 0 auto;
+    z-index: 100;
+}
 .eboard-container {
 	padding: 30px 40px 10px 40px;
 	clear: both;
 }
 .eboard-container h1 {
-	font-family: SourceSansProRegular;
-	font-size: 30px;
+/*	font-family: SourceSansProRegular;*/
+	font-size: 2em;
+    font-weight: 400;
 	margin: 0 0 50px 0;
 	padding: 0 0 0 0;
 	text-align: center;
@@ -34,18 +49,20 @@
 }
 .eboard-member-description {
 	height: 200px;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 1.3em;
+	margin-bottom: 1.5em;
 	/*padding-top: 12px;*/
 }
 .eboard-member-description p {
-	font-family: SourceSansProLight;
-	font-size: 20px;
-	margin-bottom: -15px;
+/*	font-family: SourceSansProLight;*/
+	font-size: 1.2em;
+    font-weight: 300;
+	margin-bottom: -1em;
 }
 .eboard-member-description h5 {
-	font-family: SourceSansProLight;
-	font-size: 15px;
+/*	font-family: SourceSansProLight;*/
+	font-size: 1em;
+    font-weight: 300;
 }
 
 .eboard-image {
@@ -63,13 +80,14 @@
 	height: auto;
 }
 .eboard-title-bold {
-	font-family: SourceSansProBold;
-	font-size: 30px;
+/*	font-family: SourceSansProBold;*/
+	font-size: 1.5em;
+    font-weight: 300;
 	color: #FFC222;
 }
 .eboard-bold {
-	font-family: SourceSansProBold;
-	font-size: 20px;
+/*	font-family: SourceSansProBold;*/
+	font-size: 1em;
 }
 #faculty-advisor {
 	border-bottom: none;

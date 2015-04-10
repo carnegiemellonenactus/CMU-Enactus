@@ -1,3 +1,4 @@
+/*
 @font-face {
 	font-family: SourceSansProLight;
 	src: url(fonts/SourceSansPro-Light.otf);
@@ -14,12 +15,27 @@
 	font-family: FiraSansLight;
 	src: url(fonts/FiraSans-Light.ttf);
 }
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+#grayback #body-container {
+	height: 100%;
+	width: 97%;
+	background-color: white;
+	background-position: center;
+	position: relative;
+	top: -20px;
+	margin: 0 auto;
+    z-index: 100;
+}
 .project-descriptions-container {
 	padding: 30px 40px 10px 40px;
 }
 .project-descriptions-container h1 {
-	font-family: SourceSansProRegular;
-	font-size: 30px;
+/*	font-family: SourceSansProRegular;*/
+	font-size: 2em;
+    font-weight: 400;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
 	text-align: center;
@@ -28,20 +44,23 @@
 	border-bottom: 1px solid #515356;
 }
 .project-descriptions h3{
-	font-family: SourceSansProRegular;
-	font-size: 30px;
+/*	font-family: SourceSansProRegular;*/
+	font-size: 2em;
+    font-weight: 400;
 	color: #FFC222;
 }
 .project-descriptions p{
-	font-family: SourceSansProLight;
-	font-size: 20px;
+/*	font-family: SourceSansProLight;*/
+	font-size: 1em;
+    font-weight: 300;
 }
 
 .project-descriptions h5 {
 	width: 100%;
 	height: auto;
-	font-family: SourceSansProLight;
-	font-size: 15px;
+/*	font-family: SourceSansProLight;*/
+	font-size: 1em;
+    font-weight: 300;
 }
 .project-leader-image {
 	height: 200px;
@@ -63,8 +82,9 @@
 	height: auto;
 }
 .vision-initiative-bold {
-	font-family: SourceSansProBold;
-	font-size: 20px;
+/*	font-family: SourceSansProBold;*/
+	font-size: 1em;
+    font-weight: 500;
 }
 .project-leaders {
 	display: inline-block;
